@@ -16,10 +16,6 @@ if not plex_auth:
 print('plex_server: ' + plex_server)
 print('plex auth: ' + plex_auth)
 
-url_accept = plex_server + '/:/prefs?AcceptedEULA=true'
-response = requests.put(url_accept)
-print(response)
-
 # http://127.0.0.1:32400/:/prefs?AcceptedEULA=true&X-Plex-Product=Plex Web&X-Plex-Version=3.44.1&X-Plex-Client-Identifier=k8eqw0swx9qtulti3guxggyn&X-Plex-Platform=Firefox&X-Plex-Platform-Version=60.0&X-Plex-Sync-Version=2&X-Plex-Device=Linux&X-Plex-Device-Name=Firefox&X-Plex-Device-Screen-Resolution=1047x857,1920x1080&X-Plex-Token=t2BE4BmnxkxWvVYdSnTT&X-Plex-Provider-Version=1.2
 
 while True:
